@@ -34,8 +34,8 @@ class NewsCard extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: Container(
                 color: ColorManager.lightGrey,
-                height: AppSize.s130.h,
-                width: AppSize.s130.w,
+                height: AppSize.s140.h,
+                width: AppSize.s140.w,
                 child: CachedNetworkImage(
                   imageUrl: news.newsImage,
                   imageBuilder: (context, imageProvider) => Container(
@@ -54,8 +54,8 @@ class NewsCard extends StatelessWidget {
             ),
           ),
           Container(
-            constraints: BoxConstraints(maxWidth: AppSize.s150.w),
-            padding: EdgeInsets.symmetric(vertical: AppSize.s2.h),
+            constraints: BoxConstraints(
+                maxWidth: AppSize.s140.w, maxHeight: AppSize.s150.h),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
