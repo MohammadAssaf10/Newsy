@@ -20,11 +20,10 @@ class DioFactory {
   Future<Dio> getDio() async {
     Dio dio = Dio();
 
-    String language = "english";
     Map<String, String> headers = {
       contentType: applicationJson,
       accept: applicationJson,
-      language: language
+      language: "en"
     };
 
     dio.options = BaseOptions(

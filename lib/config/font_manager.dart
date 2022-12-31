@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 
 class FontConstants {
-  static const String ralewayFamily = "assets/fonts/Raleway-Regular.ttf";
-  static const String josefinSansSemiBoldFamily =
-      "assets/fonts/JosefinSans-SemiBold.ttf";
-  static const String josefinSansBoldFamily =
-      "assets/fonts/JosefinSans-Bold.ttf";
+  static const String ralewayFamily = "Raleway";
+  static const String josefinSansFamily = "JosefinSans";
 }
 
 class FontWeightManager {

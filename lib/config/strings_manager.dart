@@ -19,9 +19,12 @@ class AppStrings {
 
   // home screen
   static const String home = "HOME";
+  static const String settings = "SETTINGS";
+  static const String profile = "PROFILE";
+  static const String favorites = "FAVORITES";
   static const String search = "Search...";
-  static const String popular = "POPULAR";
-  static const String latest = "LATEST";
-  static const String trending = "TRENDING";
+  static const String sport = "SPORTS";
+  static const String technology = "TECHNOLOGY";
+  static const String business = "BUSINESS";
   static const String readMore = "READ MORE";
 }

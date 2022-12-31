@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:news_app/features/home/presentation/pages/home/home_screen.dart';
 
 import '../../config/theme_manager.dart';
+import '../../features/home/presentation/main_view.dart';
+import '../../features/home/presentation/pages/home/bloc/news_bloc.dart';
+import 'di.dart';
 
 class MyApp extends StatelessWidget {
   // named constructor
@@ -19,11 +22,18 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
-        return MaterialApp(
-          theme: getApplicationTheme(),
-          debugShowCheckedModeBanner: false,
-          title: 'News App',
-          home: const NewsView(),
+        return MultiBlocProvider(
+          providers: [
+            BlocProvider<NewsBloc>(
+              create: (_) => sl<NewsBloc>()..add(GetTechnologyNews()),
+            ),
+          ],
+          child: MaterialApp(
+            theme: getApplicationTheme(),
+            debugShowCheckedModeBanner: false,
+            title: 'NEWSY',
+            home: const MainView(),
+          ),
         );
       },
     );

@@ -12,21 +12,19 @@ ThemeData getApplicationTheme() {
 
     // app bar theme
     appBarTheme: AppBarTheme(
+
       systemOverlayStyle: const SystemUiOverlayStyle(
-        statusBarColor: Colors.transparent,
-        systemNavigationBarColor: Colors.transparent,
-        systemNavigationBarDividerColor: Colors.transparent,
-        statusBarIconBrightness: Brightness.light,
-        statusBarBrightness: Brightness.light,
-        systemNavigationBarIconBrightness: Brightness.light
-      ),
+          statusBarColor: Colors.transparent,
+          systemNavigationBarColor: Colors.transparent,
+          systemNavigationBarDividerColor: Colors.transparent,
+          statusBarIconBrightness: Brightness.light,
+          statusBarBrightness: Brightness.light,
+          systemNavigationBarIconBrightness: Brightness.light),
       centerTitle: true,
       elevation: AppSize.s0,
       titleTextStyle: getJosefinSansBoldStyle(
           fontSize: AppSize.s25.sp, color: ColorManager.white),
     ),
-    // text theme
-    textTheme: const TextTheme(),
     // input decoration theme (text form field)
     errorColor: ColorManager.error,
     inputDecorationTheme: InputDecorationTheme(

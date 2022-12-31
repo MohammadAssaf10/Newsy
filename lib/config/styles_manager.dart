@@ -22,11 +22,11 @@ TextStyle getRalewayRegularStyle(
 TextStyle getJosefinSansSemiBoldStyle(
     {required double fontSize, required Color color}) {
   return _getTextStyle(fontSize, FontWeightManager.semiBold, color,
-      FontConstants.josefinSansSemiBoldFamily);
+      FontConstants.josefinSansFamily);
 }
 // josefinSans bold style
 TextStyle getJosefinSansBoldStyle(
     {required double fontSize, required Color color}) {
   return _getTextStyle(fontSize, FontWeightManager.bold, color,
-      FontConstants.josefinSansBoldFamily);
+      FontConstants.josefinSansFamily);
 }
