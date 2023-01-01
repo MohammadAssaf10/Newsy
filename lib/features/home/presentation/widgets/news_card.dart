@@ -16,7 +16,7 @@ class NewsCard extends StatelessWidget {
     required this.news,
   }) : super(key: key);
   final News news;
-//123
+
   @override
   Widget build(BuildContext context) {
     return Container(
